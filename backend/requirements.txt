@@ -2,12 +2,14 @@
 pytest>=8.0.0
 pytest-cov>=4.1.0
 
-# Future Module 2-6 dependencies (to be installed when tackling respective modules)
+
 # Module 2:
-# torch>=2.2.0
-# transformers>=4.38.0
-# sentence-transformers>=2.5.0
-# qdrant-client>=1.8.0
+torch>=2.2.0
+transformers>=4.38.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+sentence-transformers>=2.5.0
+qdrant-client>=1.8.0
 
 # Module 3:
 # presidio-analyzer>=2.2.35
