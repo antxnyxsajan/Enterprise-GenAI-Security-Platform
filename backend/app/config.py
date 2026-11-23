@@ -36,5 +36,17 @@ class Settings:
     qdrant_risk_threshold: float = float(os.getenv("QDRANT_RISK_THRESHOLD", "0.85"))
     ml_risk_threshold: float = float(os.getenv("ML_RISK_THRESHOLD", "0.90"))
 
+    # Module 3: Data Protection Engine (DPE)
+    spacy_model_name: str = os.getenv("SPACY_MODEL_NAME", "en_core_web_lg")
+    dpe_score_threshold: float = float(os.getenv("DPE_SCORE_THRESHOLD", "0.60"))
+    dpe_entities: tuple = (
+        "EMAIL_ADDRESS",
+        "PHONE_NUMBER",
+        "CREDIT_CARD",
+        "US_SSN",
+        "PERSON",
+        "LOCATION",
+    )
+
 
 settings = Settings()

@@ -47,6 +47,10 @@ class SecurityTestResult(unittest.TestResult):
             "TestQdrantInMemoryStore": "[Module 2] Qdrant In-Memory Vector Store & Idempotent Seeding",
             "TestHybridFirewallOrchestration": "[Module 2] Parallel Non-Gated Firewall & Complementarity",
             "TestHybridFirewallIntegration": "[Module 2 Integration] Real DeBERTa-v3 + MiniLM + Qdrant",
+            # Module 3: Data Protection Engine (DPE)
+            "TestDPEContracts": "[Module 3] DPE Schema & Redaction Token Contracts",
+            "TestDPEServiceOrchestration": "[Module 3] PII Detection & Async Redaction Engine",
+            "TestPresidioEngineIntegration": "[Module 3 Integration] Real Presidio Analyzer & Anonymizer",
         }
 
     def startTestRun(self):
